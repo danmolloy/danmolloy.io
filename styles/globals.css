@@ -29,6 +29,9 @@
   .body {
     @apply p-2 flex flex-col items-center w-full md:w-2/3 self-center
   }
+  .img-container {
+    @apply w-2/3 h-full lg:w-1/2 m-2
+  }
   .title {
     @apply self-start
   }

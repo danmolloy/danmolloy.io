@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import Layout from "../components/layout"
 
@@ -5,6 +6,9 @@ export default function() {
   return (
     <Layout>
       <h1 className='title'>About</h1>
+      <div className="img-container">
+        <Image src="/images/dan-boat.jpeg" height="639" width="689"/>
+      </div>
       <article>
         <p>Dan was born in Brisbane, Australia, although for most of his childhood he lived on the Gold Coast. He studied classical double bass at Queensland Conservatorium, and, having moved to London in 2014, at Guildhall School of Music & Drama. His professors have included Colin Paris, Michael Morgan and Dusan Walkowicz. 
         </p>
