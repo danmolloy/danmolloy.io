@@ -3,8 +3,9 @@
 My personal website.
 
 ## Stack
-NextJS
-Tailwind
-Formik
-NodeMailer
+- NextJS
+- Tailwind
+- Formik
+- NodeMailer
+
 
