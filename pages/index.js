@@ -12,22 +12,6 @@ export default function Index() {
 
   return (
     <Layout home>
-      <Head>
-        <title>Dan Molloy Double Bassist | Web Developer London</title>
-        <meta 
-          name="description" 
-          content="Dan Molloy is an Australian musician and web developer in London." />
-        <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="Dan Molloy Double Bassist | Web Developer London" />
-        <meta
-          property="og:description"
-          content="Dan Molloy is an Australian musician and web developer in London."
-        />
-        {/* <meta
-          property="og:image"
-          content="https://example.com/images/cool-page.jpg"
-        /> */}
-      </Head>
       <Home />
     </Layout>
   )
