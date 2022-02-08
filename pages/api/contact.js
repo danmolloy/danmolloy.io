@@ -1,6 +1,8 @@
 require('dotenv').config()
 
-const PASSWORD = process.env.password
+const PASSWORD = process.env.PASSWORD
+const FROM_EMAIL = process.env.FROM_EMAIL
+const TO_EMAIL = process.env.TO_EMAIL
 
 export default function (req, res) {
 
@@ -10,7 +12,7 @@ export default function (req, res) {
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: 'donotreply.danmolloy@gmail.com',
+      user: FROM_EMAIL,
       pass: PASSWORD,
     },
     secure: true,
@@ -19,8 +21,8 @@ export default function (req, res) {
 
 
 const mailData = {
-  from: 'donotreply.danmolloy@gmail.com',
-  to: 'danmolloy91@gmail.com',
+  from: FROM_EMAIL,
+  to: TO_EMAIL,
   subject: `Message from ${req.body.name}`,
   text: `${req.body.message} | Sent from ${req.body.email}`,
   html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
