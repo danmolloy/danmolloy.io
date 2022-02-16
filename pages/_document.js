@@ -25,7 +25,7 @@ class MyDocument extends Document {
           name="description" 
           content="Dan Molloy is an Australian musician and web developer in London." />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="Dan Molloy Double Bassist | Web Developer London" />
+        <meta property="og:title" content="Dan Molloy Web Developer | Double Bass London" />
         <meta
           property="og:description"
           content="Dan Molloy is an Australian musician and web developer in London."
