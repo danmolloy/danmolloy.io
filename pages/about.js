@@ -21,13 +21,24 @@ export default function() {
           I'm also an enthusiastic private music teacher, putting students through exams of all levels, as well as preparing them for scholarship exams and recitals.
         </p>
         <br />
-        <p>
-          Away from music, I love learning and problem solving. When 2020 came, learning web development satisfied my hunger for this. Two years later, I'm still coding everyday, whether it be in my personal projects or in the open source community. You can see a sample of his projects on the <Link href="/projects"><a className="blue-links">Web Projects page</a></Link>.
-        </p>
+        <p>Since 2020, I’ve shifted my focus to learning web development. I absolutely love creating solutions and overcoming challenges. My stack includes: </p>
+        <ul>
+          <li>• React</li>
+          <li>• Next JS</li>
+          <li>• Redux</li>
+          <li>• Node JS</li>
+          <li>• Apollo Client & Server</li>
+          <li>• Jest</li>
+          <li>• TypeScript</li>
+          <li>• Tailwind</li>
+          <li>• Prisma</li>
+        </ul>
         <br />
-        <p>
-          I also am actively involved at Dulwich Squash Club. 
-        </p>
+        <p>Being a freelance musician, the past few years have been extremely difficult. I’m hoping to turn my hobby of web development into a career and am currently seeking any opportunities on offer. I am hard working, disciplined, enjoy working in a team but am also content working alone. </p>
+        <br />
+        <p>You can find a sample of my projects on the Web Projects page.</p>
+        <br />
+        <p>Away from music and coding, I’m actively involved at Dulwich Squash Club.</p>
         <br />
         <p>
           You can view my music CV at <Link href="https://maslink.co.uk/client-directory?client=MOLLD1&instrument=DOUBL1"><a className="blue-links">Musicians Answering Service</a></Link>, or send me a message via the <Link href="/contact"><a className="blue-links">Contact page</a></Link>.
