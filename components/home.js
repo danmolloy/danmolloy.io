@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div className='main'>
       <h1 className='font-semibold'>Hi, I'm Dan.</h1>
-      <h2 className='font-light'>I am a <span className='text-orange-500 font-semibold'>{word}</span></h2>
+      <h2 className='font-light h-36 sm:h-auto'>I am a <span className='text-orange-500 font-semibold'>{word}</span></h2>
       <div className='self-center mt-4'>
         <Image src='/images/IMG_1127.jpeg' height="600" width="500" />
       </div>

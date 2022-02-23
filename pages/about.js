@@ -36,7 +36,7 @@ export default function() {
         <br />
         <p>Being a freelance musician, the past few years have been extremely difficult. I’m hoping to turn my hobby of web development into a career and am currently seeking any opportunities on offer. I am hard working, disciplined, enjoy working in a team but am also content working alone. </p>
         <br />
-        <p>You can find a sample of my projects on the Web Projects page.</p>
+        <p>You can find a sample of my projects on the <Link href="/projects"><a className="blue-links">Web Projects page</a></Link>.</p>
         <br />
         <p>Away from music and coding, I’m actively involved at Dulwich Squash Club.</p>
         <br />
