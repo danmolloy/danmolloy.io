@@ -1,8 +1,17 @@
 import styles from '../styles/Home.module.css';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { useState } from 'react';
 
 export default function ContactForm() {
+  const [sendStatus, setSendStatus] = useState(null)
+
+  const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please <a href='mailto:danmolloy91@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
+
+  const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
+
+  const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
+
   return (
     <Formik    
     initialValues={{
@@ -21,9 +30,11 @@ export default function ContactForm() {
         .max(200, 'Must be 200 characters or less')
         .required('Required')
     })}
-    onSubmit={(values, actions ) => {
+    onSubmit={async (values, actions ) => {
       console.log('Sending')
-  
+      setSendStatus(sendingMsg)
+      await new Promise(resolve => setTimeout(resolve, 1000))
+        
       fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -33,15 +44,14 @@ export default function ContactForm() {
         body: JSON.stringify(values)
       }).then((res) => {
         console.log('Response received')
-        
+
         if (res.status === 200) {
-          console.log('Response succeeded')
-        }
-          setTimeout(() => {
+          setSendStatus(sendSuccess)
           actions.setSubmitting(false)
           actions.resetForm()
-          alert('Message submitted!')
-          }, 300)
+        } else {
+          setSendStatus(sendFail)
+        }
         })
       }}> 
     
@@ -76,8 +86,10 @@ export default function ContactForm() {
             { msg => <div className="form-error">{msg}</div> }
           </ErrorMessage>
         <button id="submit-button" type='submit' className="submit-btn">Submit</button>
+        <div>
+        {sendStatus}
+      </div>
       </Form> 
-      
     </Formik>
   )
 }
