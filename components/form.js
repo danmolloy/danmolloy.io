@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function ContactForm() {
   const [sendStatus, setSendStatus] = useState(null)
 
-  const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please <a href='mailto:danmolloy91@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
+  const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please try again or <a href='mailto:danmolloy91@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
 
   const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
 

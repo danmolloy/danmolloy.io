@@ -9,7 +9,12 @@ export default async function (req, res) {
   let nodemailer = require('nodemailer')
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "smtp-mail.outlook.com", // hostname
+    secureConnection: false, // TLS requires secureConnection to be false
+    port: 587, // port for secure SMTP
+    tls: {
+       ciphers:'SSLv3'
+    },
     auth: {
       user: FROM_EMAIL,
       pass: PASSWORD,
