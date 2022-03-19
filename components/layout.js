@@ -16,7 +16,7 @@ export default function Layout({ children, home }) {
             <h2 className='text-3xl '>Dan Molloy</h2>
             </a>
           </Link>
-            <MenuIcon showMenu={() => setShowMenu(!showMenu)}/>
+            <MenuIcon setShowMenu={() => setShowMenu(!showMenu)} showMenu={showMenu}/>
         </header>
         {showMenu && <Menu showMenu={() => setShowMenu(false)}/>}
         <div className='body'>
