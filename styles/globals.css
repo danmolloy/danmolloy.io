@@ -36,7 +36,7 @@
     @apply self-start
   }
   .menu-icon {
-    @apply h-10 w-10 rounded-full hover:fill-slate-500 active:fill-slate-400 p-2 m-4
+    @apply h-10 w-10  hover:fill-slate-500 active:fill-slate-400  m-2
   }
   .menu {
     @apply flex flex-col border border-t-0 border-slate-400 w-2/3 sm:w-1/3 self-end z-10 bg-white fixed items-start p-2 mt-24
