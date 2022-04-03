@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
-const wordList = ['web developer', 'double bassist', 'squash player']
+const wordList = ['double bassist', 'software enthusiast', 'squash player']
 
 export default function Home() {
   const [word, setWord] = useState("")
