@@ -20,7 +20,16 @@ export default function Projects() {
 
 const projects = [
   {
-  title: "Online Store",
+    title: "Spelling Bee",
+    image: "/images/bees.png",
+    blurb: "A replica of NYT Spelling Bee game, connecting to NYT data source.",
+    link: "https://spelling-bee-danmolloy.vercel.app/",
+    code: "https://github.com/danmolloy/spelling-bee",
+    stack: ["Next.js", "Tailwind", "Jest"],
+    key: 4
+  },
+  {
+    title: "Online Store",
    image: "/images/e-commerce.png",
    blurb: "A typical online store, complete with Stripe checkout integration.",
    link: "https://e-commerce-danmolloy.vercel.app/",
