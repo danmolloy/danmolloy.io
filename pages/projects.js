@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Spelling Bee",
     image: "/images/bees.png",
-    blurb: "A replica of NYT Spelling Bee game, connecting to NYT data source.",
+    blurb: "A replica of NYT Spelling Bee game, connecting to NYT source code.",
     link: "https://spelling-bee-danmolloy.vercel.app/",
     code: "https://github.com/danmolloy/spelling-bee",
     stack: ["Next.js", "Tailwind", "Jest"],
