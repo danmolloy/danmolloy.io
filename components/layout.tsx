@@ -3,12 +3,16 @@ import MenuIcon from './menuIcon'
 import Menu from './menu'
 import { useState } from 'react'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Layout({ children, home }) {
   const [showMenu, setShowMenu] = useState(false)
 
   return (
     <div className="layout">
+      <Head>
+      <title>Dan Molloy Web Developer | Double Bassist London</title>
+      </Head>
       <main className="main">
         <header className='header'>
           <Link href="/">

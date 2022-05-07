@@ -20,7 +20,6 @@ class MyDocument extends Document {
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Press+Start+2P&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
-        <title>Dan Molloy Web Developer | Double Bassist London</title>
         <meta 
           name="description" 
           content="Dan Molloy is an Australian musician and web developer in London." />

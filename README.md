@@ -5,7 +5,7 @@ My personal website.
 ## Stack
 - NextJS
 - Tailwind
-- Formik
+- Formik (Yup validation)
 - NodeMailer
 
 
