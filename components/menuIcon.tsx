@@ -9,7 +9,7 @@ export default function MenuIcon({showMenu, setShowMenu}) {
 
 
   return (
-      <button className="menu-icon" onClick={() => setShowMenu()}>
+      <button className="menu-icon" data-testid='menu-icon' onClick={() => setShowMenu()}>
         <svg width="30" height="22" className='m-2' >
           <animated.rect style={props} width="30" height="2" rx="2" />
           <animated.rect style={props2} y="8" width="30" height="2" rx="2"/>
