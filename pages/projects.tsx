@@ -4,7 +4,7 @@ import ProjectCard from '../components/projectCards';
 
 export default function Projects() {
   return (
-    <Layout>
+    <Layout home={"false"}>
       <Head>
         <title>Dan Molloy</title>
         <meta name="description" content="Dan Molloy's portfolio" />
