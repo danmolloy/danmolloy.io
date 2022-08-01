@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 export default function() {
   return (
-    <Layout>
+    <Layout home="false">
       <h1 className='title'>About</h1>
       <div className="img-container">
         <Image src="/images/dan-bass.jpeg" width="3024" height="4032"/>
