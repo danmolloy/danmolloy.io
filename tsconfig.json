@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app.test.jsx"  ],
+, "app.test.jsx", "tailwind.config.js", "postcss.config.js"  ],
   "exclude": [
     "node_modules"
   ]
