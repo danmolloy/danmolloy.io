@@ -1,4 +1,3 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
 
 require('dotenv').config()
 
@@ -6,7 +5,7 @@ const PASSWORD = process.env.password
 const FROM_EMAIL = process.env.FROM_EMAIL
 const TO_EMAIL = process.env.TO_EMAIL
 
-export default async function (req: NextApiRequest, res: NextApiResponse) {
+export default async function (req, res) {
 
   let nodemailer = require('nodemailer')
 
