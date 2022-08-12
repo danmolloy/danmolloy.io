@@ -35,7 +35,7 @@ export default function Home() {
     <div className='main'>
       <h1 className='font-semibold h-24'>{word}</h1>
       <div className='my-2'>
-        <p className='font-light h-36 sm:h-auto'>I am a <span className='text-orange-500 font-semibold'>musician</span>. </p>
+        <p className='font-light '>I am a <span className='text-orange-500 font-semibold'>musician</span>. </p>
         <p> You can view my CV and book me through {` `}
         <Link href="https://maslink.co.uk/client-directory?client=MOLLD1&instrument=DOUBL1">
             <a target="_blank" className='text-blue-600'>
@@ -45,7 +45,7 @@ export default function Home() {
         </p>
         </div>
         <div className='my-2'>
-      <p className='font-light h-36 sm:h-auto'>I also like to write <span className='text-green-500 font-semibold'>code</span>. 
+      <p className='font-light'>I also like to write <span className='text-green-500 font-semibold'>code</span>. 
       </p>
       <p>You can find my projects on{` `}
         <Link href="https://github.com/danmolloy">
