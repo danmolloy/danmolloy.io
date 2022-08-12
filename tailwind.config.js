@@ -9,7 +9,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: [ /* '"Press Start 2P"', */ 'Rubik', 'Poppins', 'Nunito', ...defaultTheme.fontFamily.serif]
+        custom: [ /* '"Press Start 2P"', */ 'Rubik', 'Poppins', 'Nunito', ...defaultTheme.fontFamily.serif],
+        display: [ /* '"Press Start 2P"', */ 'SilkScreen', 'Rubik', 'Nunito', ...defaultTheme.fontFamily.serif]
+
       }
     },
   },
@@ -20,6 +22,7 @@ module.exports = {
         'h2': { fontSize: theme('fontSize.5xl') },
         'h3': { fontSize: theme('fontSize.4xl') },
         'h4': { fontSize: theme('fontSize.3xl') },
+        'p': { fontSize: theme('fontSize.xl') },
       })
     })
   ]

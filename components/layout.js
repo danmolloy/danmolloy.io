@@ -11,16 +11,16 @@ export default function Layout({ children, home }) {
   return (
     <div className="layout">
       <Head>
-      <title>Dan Molloy Web Developer | Double Bassist London</title>
+      <title>Dan Molloy</title>
       </Head>
       <main className="main">
         <header className='header'>
           <Link href="/">
-            <a className={home ? 'invisible' : 'hover:no-underline hover:text-slate-500 active:text-slate-600 font-medium text-slate-400 self-start -m-1'}>
-            <h2 className='text-3xl '>Dan Molloy</h2>
+            <a className={'hover:no-underline hover:text-slate-500 active:text-slate-600 font-medium text-slate-400 self-start -m-1'}>
+            <h2 className='text-3xl font-display'>Dan Molloy</h2>
             </a>
           </Link>
-            <MenuIcon setShowMenu={() => setShowMenu(!showMenu)} showMenu={showMenu}/>
+            {/* <MenuIcon setShowMenu={() => setShowMenu(!showMenu)} showMenu={showMenu}/> */}
         </header>
         {showMenu && <Menu showMenu={() => setShowMenu(false)}/>}
         <div className='body'>

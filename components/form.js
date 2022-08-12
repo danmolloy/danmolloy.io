@@ -1,16 +1,19 @@
 import styles from '../styles/Home.module.css';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import Realistic from './realistic';
 
 export default function ContactForm() {
   const [sendStatus, setSendStatus] = useState(null)
+  const [recieved, setRecieved] = useState(false)
 
   const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please try again or <a href='mailto:danmolloy91@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
 
   const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
 
   const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
+
 
   return (
     <Formik    
@@ -47,6 +50,7 @@ export default function ContactForm() {
 
         if (res.status === 200) {
           setSendStatus(sendSuccess)
+          setRecieved(true)
           actions.setSubmitting(false)
           actions.resetForm()
         } else {
@@ -56,6 +60,7 @@ export default function ContactForm() {
       }}> 
     
       <Form className="form">
+        {recieved && <Realistic />}
           <label htmlFor='name-input' className={styles.formLabel}>Name</label>
           <Field 
             id="name-input" 

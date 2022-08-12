@@ -1,21 +1,21 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
-const wordList = ['double bassist', 'software enthusiast', 'squash player']
+const wordList = ["Hi, I'm Dan."]
 
 export default function Home() {
   const [word, setWord] = useState("")
   
-  const scrollingText = async () => {
-
+ const scrollingText = async () => {
     for (let j = 0; j < wordList.length; j++) {
       await new Promise(resolve => setTimeout(resolve, 1000))
       for (let i = 0; i <= wordList[j].length; i++) {
         await new Promise(resolve => setTimeout(resolve, 100))
         setWord(wordList[j].slice(0, i))
       }
-      await new Promise(resolve => setTimeout(resolve, 1500))
+    /*   await new Promise(resolve => setTimeout(resolve, 1500))
       for (let i = wordList[j].length; i >= 0; i--) {
         await new Promise(resolve => setTimeout(resolve, 75))
         setWord(wordList[j].slice(0, i))
@@ -23,10 +23,9 @@ export default function Home() {
 
       if (j === wordList.length - 1) {
         j = - 1
-      }
-    }
-
-  }
+      } */
+    } 
+  } 
 
   useEffect(() => {
     scrollingText()
@@ -34,11 +33,37 @@ export default function Home() {
 
   return (
     <div className='main'>
-      <h1 className='font-semibold'>Hi, I'm Dan.</h1>
-      <h2 className='font-light h-36 sm:h-auto'>I am a <span className='text-orange-500 font-semibold'>{word}</span></h2>
-      <div className='self-center mt-4'>
-        <Image src='/images/IMG_1127.jpeg' height="600" width="500" />
+      <h1 className='font-semibold h-24'>{word}</h1>
+      <div className='my-2'>
+        <p className='font-light h-36 sm:h-auto'>I am a <span className='text-orange-500 font-semibold'>musician</span>. </p>
+        <p> You can view my CV and book me through {` `}
+        <Link href="https://maslink.co.uk/client-directory?client=MOLLD1&instrument=DOUBL1">
+            <a target="_blank" className='text-blue-600'>
+            MAS
+            </a>
+          </Link>.
+        </p>
+        </div>
+        <div className='my-2'>
+      <p className='font-light h-36 sm:h-auto'>I also like to write <span className='text-green-500 font-semibold'>code</span>. 
+      </p>
+      <p>You can find my projects on{` `}
+        <Link href="https://github.com/danmolloy">
+          <a target="_blank" className='text-blue-600'>
+          GitHub
+          </a>
+        </Link>.
+      </p>
       </div>
+      <div className='my-2'>
+      <p className='font-light h-36 sm:h-auto'>Feel free to {` `}
+      <Link href="/contact" >
+        <a className='text-blue-600'>contact me</a></Link>
+      .</p>
+      </div>
+{/*       <p className='font-light h-36 sm:h-auto mt-16'>Would you like to play a <span className='text-amber-500 font-semibold'>game</span>?</p>
+ */}
+
     </div>
   )
 }
