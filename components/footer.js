@@ -4,6 +4,7 @@ import { AiOutlineGithub, AiOutlineTwitter, AiOutlineInstagram } from 'react-ico
 export default function Footer() {
   return (
     <footer className="footer">
+      
       <Link href="https://github.com/danmolloy">
         <a target="_blank">
           <AiOutlineGithub className='react-icons'/>

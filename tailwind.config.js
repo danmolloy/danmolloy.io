@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: [ /* '"Press Start 2P"', */ 'Rubik', 'Poppins', 'Nunito', ...defaultTheme.fontFamily.serif],
+        custom: [  /* 'Roboto Mono', */ 'Space Mono', 'Inconsolata', 'Rubik', 'Poppins', 'Nunito', ...defaultTheme.fontFamily.serif],
         display: [ /* '"Press Start 2P"', */ 'SilkScreen', 'Rubik', 'Nunito', ...defaultTheme.fontFamily.serif]
 
       }

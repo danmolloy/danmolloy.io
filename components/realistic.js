@@ -12,7 +12,7 @@ const canvasStyles = {
 
 /* Copied from https://codesandbox.io/s/realistic-fn-react-canvas-confetti-2o3pe?file=/src/App.js */
 
-export default function Realistic({ sentMsg }) {
+export default function Realistic() {
   const refAnimationInstance = useRef(null);
 
 
