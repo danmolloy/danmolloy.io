@@ -1,6 +1,6 @@
 # danmolloy.io
 
-My personal website.
+My personal website. Also has a small game for those looking for fun.
 
 ## Stack
 - TypeScript
@@ -8,5 +8,6 @@ My personal website.
 - Tailwind
 - Formik (Yup validation)
 - NodeMailer
+- react-canvas-confetti
 
 
