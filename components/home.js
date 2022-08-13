@@ -46,7 +46,9 @@ export default function Home() {
 
   return (
     <div className='main'>
-      <h1 className='font-semibold h-24'>{word}</h1>
+      <div className='h-24 '>
+      <h1 className='font-semibold '>{word}</h1>
+      </div>
       <div className='my-2'>
         <p className='font-light '>I am a <span className='text-orange-500 font-semibold'>musician</span>. </p>
         <p> You can view my CV and book me through {` `}
@@ -75,7 +77,7 @@ export default function Home() {
       .</p>
       </div>
      {showPacman 
-      && <button className=' fixed left-4 bottom-16 slide-in text-2xl hover:text-yellow-400 flex-row' onClick={() => setShowGame(!showGame)}>
+      && <button className=' fixed left-4 bottom-16 slide-in text-2xl active:text-yellow-400 hover:text-yellow-400 flex-row' onClick={() => setShowGame(!showGame)}>
         <RiGameFill />
       </button>}
 
