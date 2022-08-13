@@ -50,6 +50,9 @@
   .footer {
     @apply flex flex-row justify-center h-24 items-center w-full
   }
+  .footer-icons {
+    @apply flex flex-row justify-center h-24 items-center w-full
+  }
   .react-icons {
     @apply w-12 h-12 p-2 rounded-full hover:bg-slate-200 active:bg-slate-300 hover:no-underline
   }

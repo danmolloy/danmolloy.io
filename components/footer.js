@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import { AiOutlineGithub, AiOutlineTwitter, AiOutlineInstagram } from 'react-icons/ai'
+import { RiGameFill } from 'react-icons/ri'
 
 export default function Footer() {
   return (
     <footer className="footer">
-      
+      <div className='footer-icons'>
       <Link href="https://github.com/danmolloy">
         <a target="_blank">
           <AiOutlineGithub className='react-icons'/>
@@ -20,6 +21,13 @@ export default function Footer() {
           <AiOutlineInstagram className='react-icons'/>
         </a>
       </Link>
+      </div>
+      <Link href="/conundrum">
+        <a className=' text-2xl active:text-yellow-400 hover:text-slate-900 text-yellow-400 flex-row' onClick={() => setShowGame(!showGame)}>
+          <RiGameFill />
+        </a>
+      </Link>
+      
     </footer>
   )
 }

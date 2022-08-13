@@ -1,9 +1,7 @@
 
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import Game from './game'
-import { RiGameFill } from 'react-icons/ri'
 
 
 const wordList = ["Hi, I'm Dan."]
@@ -11,7 +9,6 @@ const wordList = ["Hi, I'm Dan."]
 export default function Home() {
   const [word, setWord] = useState("")
   const [showGame, setShowGame] = useState(false)
-  const [showPacman, setShowPacman] = useState(false)
   
  const scrollingText = async () => {
     for (let j = 0; j < wordList.length; j++) {
@@ -32,14 +29,10 @@ export default function Home() {
     } 
   } 
 
-  const reveal = async() => {
-    await new Promise(resolve => setTimeout(resolve, 5000))
-    setShowPacman(true)
-  }
+
 
   useEffect(() => {
     scrollingText()
-    reveal()
   }, [])
 
   
@@ -76,10 +69,7 @@ export default function Home() {
         <a className='text-blue-600'>contact me</a></Link>
       .</p>
       </div>
-     {showPacman 
-      && <button className=' fixed left-4 bottom-16 slide-in text-2xl active:text-yellow-400 hover:text-yellow-400 flex-row' onClick={() => setShowGame(!showGame)}>
-        <RiGameFill />
-      </button>}
+     
 
     {showGame && <Game />}
     </div>
