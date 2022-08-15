@@ -45,7 +45,7 @@ export default function Game() {
   }
 
   const submit = async() => {
-    if (userAnswer.toUpperCase() === words[wordIndex]) {
+    if (userAnswer.trim().toUpperCase() === words[wordIndex]) {
       timer.pause()
       setGameState("completed")
     } else {
