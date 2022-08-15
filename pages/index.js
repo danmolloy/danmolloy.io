@@ -5,7 +5,7 @@ import Home from '../components/home'
 export default function Index() {
 
   return (
-    <Layout home={"true"}>
+    <Layout home>
       <Home />
     </Layout>
   )

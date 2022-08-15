@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 
 export default function Contact()  {
   return (
-    <Layout home="false">  
+    <Layout>  
     <Head>
       <title>Dan Molloy</title>
       <meta name="description" content="Contact Dan Molloy" />

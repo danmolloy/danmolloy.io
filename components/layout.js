@@ -4,6 +4,7 @@ import Menu from './menu'
 import { useState } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Layout({ children, home }) {
   const [showMenu, setShowMenu] = useState(false)
@@ -15,8 +16,11 @@ export default function Layout({ children, home }) {
       </Head>
       <main className="main">
         <header className='header'>
+          <div className='m-2'>
+            {home &&<Image src="/images/dan-boat-close.jpeg" width={500/6} height={500/6} className='rounded-full'/>}
+          </div>
           <Link href="/">
-            <a className={'hover:no-underline hover:text-slate-500 active:text-slate-600 font-medium text-slate-400 self-start -m-1'}>
+            <a className={'hover:no-underline hover:text-slate-500 active:text-slate-600 font-medium text-slate-400 '}>
             <h2 className='text-3xl font-display'>Dan Molloy</h2>
             </a>
           </Link>

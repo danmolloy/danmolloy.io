@@ -45,7 +45,7 @@
     @apply hover:bg-slate-200 active:bg-slate-300 w-full p-2 text-slate-900 hover:no-underline
   }
   .header {
-    @apply flex flex-row h-24 justify-between items-center border-b border-slate-500 
+    @apply flex flex-row w-full h-24 justify-between items-center border-b border-slate-500 
   }
   .footer {
     @apply flex flex-row justify-center h-24 items-center w-full

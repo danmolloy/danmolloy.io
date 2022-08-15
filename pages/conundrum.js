@@ -3,7 +3,7 @@ import Game from '../components/game'
 
 export default function Contact()  {
   return (
-    <Layout home="false">  
+    <Layout >  
     <h1 className=''>Word Game</h1>
     <Game />
     </Layout>
