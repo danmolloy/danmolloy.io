@@ -23,7 +23,7 @@ export default function Footer() {
       </Link>
       </div>
       <Link href="/conundrum">
-        <a className=' text-2xl active:text-yellow-400 hover:text-slate-900 text-yellow-400 flex-row mr-4' onClick={() => setShowGame(!showGame)}>
+        <a className=' text-2xl active:text-yellow-400 hover:text-slate-900 text-yellow-400 flex-row mr-4' >
           <RiGameFill />
         </a>
       </Link>

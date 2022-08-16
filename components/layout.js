@@ -20,7 +20,7 @@ export default function Layout({ children, home }) {
             {home &&<Image src="/images/dan-boat-close.jpeg" width={500/6} height={500/6} className='rounded-full'/>}
           </div>
           <Link href="/">
-            <a className={'hover:no-underline hover:text-slate-500 active:text-slate-600 font-medium text-slate-400 '}>
+            <a className={'hover:no-underline hover:text-slate-900 active:text-orange-500 font-medium text-orange-500 '}>
             <h2 className='text-3xl font-display'>Dan Molloy</h2>
             </a>
           </Link>
