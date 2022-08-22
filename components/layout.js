@@ -16,11 +16,11 @@ export default function Layout({ children, home }) {
       </Head>
       <main className="main">
         <header className='header'>
-          <div className='m-2'>
+          {/* <div className='m-2'>
             {home &&<Image src="/images/dan-boat-close.jpeg" width={500/6} height={500/6} className='rounded-full'/>}
-          </div>
+          </div> */}
           <Link href="/">
-            <a className={'hover:no-underline hover:text-slate-900 active:text-orange-500 font-medium text-orange-500 '}>
+            <a className={' active:text-slate-600 font-medium '}>
             <h2 className='text-3xl font-display'>Dan Molloy</h2>
             </a>
           </Link>
