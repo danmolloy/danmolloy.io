@@ -4,7 +4,7 @@ import Game from '../components/game'
 export default function Contact()  {
   return (
     <Layout >  
-    <h1 className=''>Word Game</h1>
+    <h1 className=''>Conundrum</h1>
     <Game />
     </Layout>
   )

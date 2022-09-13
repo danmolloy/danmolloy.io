@@ -42,30 +42,31 @@ export default function Home() {
       <h1 className='font-semibold '>{word}</h1>
       </div>
       <div className='my-2'>
-        <p className='font-light '>I am a <span /* className='text-orange-500 font-semibold' */>musician</span>. </p>
+        <p className='font-light '>I am a freelance double bassist in London. I regularly perform for many leading ensembles and am on a variety of soundtracks.</p>
+      </div>
+      <div className='my-2'>
         <p> You can view my CV and book me through {` `}
         <Link href="https://maslink.co.uk/client-directory?client=MOLLD1&instrument=DOUBL1">
-            <a target="_blank" className='text-blue-600'>
+            <a target="_blank" className='text-orange-500'>
             MAS
             </a>
           </Link>.
         </p>
         </div>
         <div className='my-2'>
-      <p className='font-light'>I also like to write <span /* className='text-green-500 font-semibold' */>code</span>. 
-      </p>
+      {/* <p className='font-light'>I also like to write code.</p>
       <p>You can find my projects on{` `}
         <Link href="https://github.com/danmolloy">
-          <a target="_blank" className='text-blue-600'>
+          <a target="_blank" className='text-orange-500'>
           GitHub
           </a>
         </Link>.
-      </p>
+      </p> */}
       </div>
       <div className='my-2'>
       <p className=' font-light h-36 sm:h-auto'>Feel free to {` `}
       <Link href="/contact" >
-        <a className='text-blue-600'>contact me</a></Link>
+        <a className='text-orange-500'>contact me</a></Link>
       .</p>
       </div>
      
