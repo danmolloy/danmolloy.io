@@ -9,10 +9,22 @@ export default function ContactForm() {
   const [recieved, setRecieved] = useState(false)
 
   const sendFail = (<div><h2 className="text-2xl">Message failed to send.</h2> <p>Please try again or <a href='mailto:danmolloy91@gmail.com' className='text-blue-500'>send an email</a>.</p></div>)
-
   const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
-
   const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
+
+  const logKey = (e) => {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+    } 
+  }
+
+  useEffect(() => {
+    window.addEventListener("keydown", logKey)
+    return () => {
+      window.removeEventListener("keydown",logKey)
+    }
+  }, [logKey])
+
 
 
   return (
@@ -85,7 +97,7 @@ export default function ContactForm() {
           <Field 
             id="msg-text" 
             className="text-input" 
-            type="text"
+            type="textarea"
             name="message"/>
           <ErrorMessage name="message">
             { msg => <div className="form-error">{msg}</div> }
