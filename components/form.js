@@ -12,7 +12,7 @@ export default function ContactForm() {
   const sendSuccess = (<div><h2 className="text-2xl">Message recieved!</h2><p>I will get back to you as soon as possible.</p></div>)
   const sendingMsg = (<div><h2 className="text-2xl">Message sending...</h2></div>)
 
-  const logKey = (e) => {
+  /* const logKey = (e) => {
     if (e.keyCode === 13) {
       e.preventDefault();
     } 
@@ -23,7 +23,7 @@ export default function ContactForm() {
     return () => {
       window.removeEventListener("keydown",logKey)
     }
-  }, [logKey])
+  }, [logKey]) */
 
 
 
@@ -46,6 +46,7 @@ export default function ContactForm() {
         .required('Required')
     })}
     onSubmit={async (values, actions ) => {
+      
       console.log('Sending')
       setSendStatus(sendingMsg)
       await new Promise(resolve => setTimeout(resolve, 1000))
@@ -70,7 +71,7 @@ export default function ContactForm() {
         }
         })
       }}> 
-    
+    {(props) => (
       <Form className="form">
         {recieved && <Realistic />}
           <label htmlFor='name-input' className={styles.formLabel}>Name</label>
@@ -95,10 +96,15 @@ export default function ContactForm() {
 
           <label htmlFor='msg-text' className={styles.formLabel}>Message</label>
           <Field 
+            multiline
+            maxlength="200"
+            rows="4"
+            component="textarea"
             id="msg-text" 
             className="text-input" 
             type="textarea"
             name="message"/>
+            {props.values.message.length > 0 && <p className='self-start text-sm mx-2 opacity-40'>{`${props.values.message.length}/200`}</p>}
           <ErrorMessage name="message">
             { msg => <div className="form-error">{msg}</div> }
           </ErrorMessage>
@@ -106,7 +112,7 @@ export default function ContactForm() {
         <div>
         {sendStatus}
       </div>
-      </Form> 
+      </Form> )}
     </Formik>
   )
 }
