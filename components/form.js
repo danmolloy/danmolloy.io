@@ -42,7 +42,7 @@ export default function ContactForm() {
         .email('Invalid email address')
         .required('Required'),
       message: Yup.string()
-        .max(200, 'Must be 200 characters or less')
+        .max(500, 'Must be 200 characters or less')
         .required('Required')
     })}
     onSubmit={async (values, actions ) => {
@@ -97,7 +97,7 @@ export default function ContactForm() {
           <label htmlFor='msg-text' className={styles.formLabel}>Message</label>
           <Field 
             multiline
-            maxlength="200"
+            maxlength="500"
             rows="4"
             component="textarea"
             id="msg-text" 
