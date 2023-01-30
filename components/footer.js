@@ -6,11 +6,11 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className='footer-icons'>
-      <Link href="https://github.com/danmolloy">
+      {/* <Link href="https://github.com/danmolloy">
         <a target="_blank">
           <AiOutlineGithub className='react-icons'/>
         </a>
-      </Link>
+      </Link> */}
       <Link href="https://twitter.com/dan_molloy1">
         <a target="_blank">
           <AiOutlineTwitter className='react-icons'/>
