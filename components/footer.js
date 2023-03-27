@@ -22,11 +22,11 @@ export default function Footer() {
         </a>
       </Link>
       </div>
-      <Link href="/conundrum">
+      {/* <Link href="/conundrum">
         <a className=' text-2xl active:text-yellow-400 hover:text-slate-900 text-yellow-400 flex-row mr-4' >
           <RiGameFill />
         </a>
-      </Link>
+      </Link> */}
       
     </footer>
   )
