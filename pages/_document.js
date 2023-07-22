@@ -18,7 +18,7 @@ class MyDocument extends Document {
         <Head>
           <meta 
           name="description" 
-          content="Dan Molloy is an Australian double bassist." />
+          content="Dan Molloy is an Australian double bassist in London." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
