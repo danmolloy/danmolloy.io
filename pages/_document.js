@@ -16,11 +16,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Mono&family=Inconsolata&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Silkscreen&display=swap" rel="stylesheet" />
-        <meta 
+          <meta 
           name="description" 
           content="Dan Molloy is an Australian double bassist." />
         <link rel="icon" href="/favicon.ico" />

@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
 const defaultTheme = require('tailwindcss/defaultTheme');
 
@@ -9,10 +10,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: [  /* 'Roboto Mono', */ 'Space Mono', 'Inconsolata', 'Rubik', 'Poppins', 'Nunito', ...defaultTheme.fontFamily.serif],
-        display: [ 'SilkScreen', 'Rubik', 'Nunito', ...defaultTheme.fontFamily.serif]
-
-      }
+        sans: [ 'var(--font-raleway)', ...defaultTheme.fontFamily.sans],
+        display: ['var(--font-inconsolata)',...defaultTheme.fontFamily.sans]
+            },
     },
   },
   plugins: [

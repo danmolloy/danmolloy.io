@@ -46,27 +46,16 @@ export default function Home() {
       </div>
       <div className='my-2'>
         <p> You can view my CV and book me through {` `}
-        <Link href="https://maslink.co.uk/client-directory?client=MOLLD1&instrument=DOUBL1">
-            <a target="_blank" className='text-orange-500'>
+        <Link href="https://maslink.co.uk/client-directory?client=MOLLD1&instrument=DOUBL1" target="_blank" className='text-orange-500'>
             MAS
-            </a>
           </Link>.
         </p>
         </div>
         <div className='my-2'>
-      {/* <p className='font-light'>I also like to write code.</p>
-      <p>You can find my projects on{` `}
-        <Link href="https://github.com/danmolloy">
-          <a target="_blank" className='text-orange-500'>
-          GitHub
-          </a>
-        </Link>.
-      </p> */}
       </div>
       <div className='my-2'>
       <p className=' font-light h-36 sm:h-auto'>Feel free to {` `}
-      <Link href="/contact" >
-        <a className='text-orange-500'>contact me</a></Link>
+      <Link href="/contact" className='text-orange-500'>contact me</Link>
       .</p>
       </div>
      
