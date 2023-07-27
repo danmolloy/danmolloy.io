@@ -113,9 +113,9 @@ export default function ContactSection() {
       </div>
       </Form> )}
     </Formik>
-    <div className="hidden lg:flex mx-12">
-{/*       <Image alt="Fiona profile photo with flute" src={"/images/fiona-profile.jpg"} width="325" height="425" />
- */}    </div>
+    <div className=" w-[20rem] h-[20rem] rounded overflow-hidden hidden lg:flex mx-12">
+       <Image alt="Dall-e creation of double bass in the style of Max Dupain" src={"/images/bass.png"} width="1024" height="1024" />
+     </div>
     </div>
     </IndexDiv>
   )

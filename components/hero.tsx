@@ -12,8 +12,10 @@ export default function Hero() {
         </p>
         </div>
         <div className="rounded-lg overflow-hidden mx-4">
-        <Image className=" " src={"/images/dan-boat.jpeg"} alt="" width={833/2} height={768/2} />
-        </div>
+        <Image className=" " src={"/images/IMG_1288.jpeg"} alt="" width={590/2} height={788/2} />
+
+{/*         <Image className=" " src={"/images/dan-boat.jpeg"} alt="" width={833/2} height={768/2} />
+ */}        </div>
       </div>
   )
 }

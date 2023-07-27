@@ -1,10 +1,6 @@
 import Footer from './footer'
-import MenuIcon from './menuIcon'
-import Menu from './menu'
 import { useState } from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from './header'
 
 export default function Layout({ children, home }) {
