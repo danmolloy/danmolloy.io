@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
-import MenuIcon from './menuIcon'
 import Link from 'next/link'
 
 export const menuItems: {title: string}[] = [
