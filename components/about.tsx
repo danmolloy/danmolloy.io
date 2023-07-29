@@ -11,7 +11,7 @@ const aboutData = {
 export default function AboutSection() {
   return (
     <IndexDiv title="About">
-      <div>
+      <div className="lg:w-2/3 ">
           {aboutData.snippets.map(i => (
             <p className="text-zinc-500 mb-6 tracking-wider" key={i}>
               {i}
