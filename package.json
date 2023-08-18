@@ -9,6 +9,7 @@
     "test": "jest --watch"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.2",
     "dotenv": "^11.0.0",
     "formik": "^2.2.9",
     "jest-environment-jsdom": "^28.1.0",
