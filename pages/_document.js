@@ -25,6 +25,14 @@ class MyDocument extends Document {
         <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
 
         </Head>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');`}
+        </script>
         <body>
           <Main />
           <NextScript />
