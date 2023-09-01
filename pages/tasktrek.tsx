@@ -12,7 +12,7 @@ Effective Date: 1 September 2023
 </p>
 
 <p>
-Thank you for using TaskTrek (&quot;"the App&quot;"). This Privacy Policy is meant to help you understand how we collect, use, disclose, and safeguard your personal information, even though the App does not collect or share any personal data.
+Thank you for using TaskTrek (&quot;the App&quot;). This Privacy Policy is meant to help you understand how we collect, use, disclose, and safeguard your personal information, even though the App does not collect or share any personal data.
 
 </p>
 <h2 className="text-2xl">
