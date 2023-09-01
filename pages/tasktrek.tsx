@@ -6,7 +6,7 @@ export default function TaskTrek() {
 
       </h1>
 
-<p>
+<p> 
 
 Effective Date: 1 September 2023
 </p>
