@@ -13,11 +13,11 @@ export default function AboutSection() {
     <IndexDiv title="About">
       <div className="lg:w-2/3 ">
           {aboutData.snippets.map(i => (
-            <p className="text-zinc-500 mb-6 tracking-wider" key={i}>
+            <p className="text-zinc-500 text-[18px] m-3 tracking-wider" key={i}>
               {i}
             </p>
           ))}
-          <p className="text-zinc-500 mb-6 tracking-wider">My CV is available on <a href="https://maslink.co.uk/client-directory?client=MOLLD1&instrument=DOUBL1" target="_blank" className="text-blue-500 hover:underline">MAS</a>.</p>
+          <p className="text-zinc-500 text-[18px] m-3 tracking-wider">My CV is available on <a href="https://maslink.co.uk/client-directory?client=MOLLD1&instrument=DOUBL1" target="_blank" className="text-blue-500 hover:underline">MAS</a>.</p>
 
         </div>
       </IndexDiv>
